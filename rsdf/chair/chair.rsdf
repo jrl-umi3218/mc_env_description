@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="chair">
+
+  <planar_surface name="Top" link="chair">
+    <origin rpy="0 0.0 0.0" xyz="0 0 0.4" />
+    <points>
+      <point xy="-0.2 0.2" />
+      <point xy="0.2 0.2" />
+      <point xy="0.2 -0.2" />
+      <point xy="-0.2 -0.2" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+  <planar_surface name="Back" link="chair">
+    <origin rpy="1.570795 0.0 1.570795" xyz="-0.21 0 0.65" />
+    <points>
+      <point xy="-0.2 0.05" />
+      <point xy="0.2 0.05" />
+      <point xy="0.2 -0.05" />
+      <point xy="-0.2 -0.05" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+  <planar_surface name="LeftHandle" link="chair">
+    <origin rpy="0 0 0" xyz="0 0.235 0.594" />
+    <points>
+      <point xy="-0.2 0.015" />
+      <point xy="0.2 0.015" />
+      <point xy="0.2 -0.015" />
+      <point xy="-0.2 -0.015" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+  <planar_surface name="RightHandle" link="chair">
+    <origin rpy="0 0 0" xyz="0 -0.235 0.594" />
+    <points>
+      <point xy="-0.2 0.015" />
+      <point xy="0.2 0.015" />
+      <point xy="0.2 -0.015" />
+      <point xy="-0.2 -0.015" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

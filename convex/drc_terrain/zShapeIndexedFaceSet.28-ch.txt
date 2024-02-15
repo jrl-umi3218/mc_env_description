@@ -1,0 +1,197 @@
+3
+30 16 24
+2.905339956283569 0.1187480017542839      0 
+2.905339956283569 0.1557590067386627 0.1381269991397858 
+3.295341014862061 0.1187480017542839      0 
+3.295341014862061 0.1557590067386627 0.1381269991397858 
+2.905339956283569 -0.2637589871883392      0 
+2.905339956283569 0.1187480017542839      0 
+3.295341014862061 -0.2637589871883392      0 
+3.295341014862061 0.1187480017542839      0 
+2.905339956283569 -0.2637589871883392 0.1024919971823692 
+2.905339956283569 -0.2637589871883392      0 
+3.295341014862061 -0.2637589871883392 0.1024919971823692 
+3.295341014862061 -0.2637589871883392      0 
+2.905339956283569 -0.2267480045557022 0.2406200021505356 
+2.905339956283569 -0.2637589871883392 0.1024919971823692 
+3.295341014862061 -0.2267480045557022 0.2406200021505356 
+3.295341014862061 -0.2637589871883392 0.1024919971823692 
+2.905339956283569 0.1557590067386627 0.1381269991397858 
+2.905339956283569 -0.2267480045557022 0.2406200021505356 
+3.295341014862061 0.1557590067386627 0.1381269991397858 
+3.295341014862061 -0.2267480045557022 0.2406200021505356 
+2.905339956283569 -0.2267480045557022 0.2406200021505356 
+2.905339956283569 0.1557590067386627 0.1381269991397858 
+2.905339956283569 -0.2637589871883392 0.1024919971823692 
+2.905339956283569 0.1187480017542839      0 
+2.905339956283569 -0.2637589871883392      0 
+3.295341014862061 -0.2637589871883392      0 
+3.295341014862061 0.1187480017542839      0 
+3.295341014862061 -0.2637589871883392 0.1024919971823692 
+3.295341014862061 0.1557590067386627 0.1381269991397858 
+3.295341014862061 -0.2267480045557022 0.2406200021505356 
+3 4 6 0 
+3 6 2 0 
+3 8 1 12 
+3 8 4 0 
+3 1 8 0 
+3 8 6 4 
+3 6 8 10 
+3 8 14 10 
+3 14 8 12 
+3 6 18 2 
+3 18 6 10 
+3 14 18 10 
+3 18 1 0 
+3 2 18 0 
+3 1 18 12 
+3 18 14 12 
+Vertices and facets:
+- p6(v7):   3.3 -0.26     0
+  neighbors: f24 f25 f33 f34 f41 f42
+- p4(v2):   2.9 -0.26     0
+  neighbors: f24 f29 f33
+- p0(v0):   2.9  0.12     0
+  neighbors: f24 f25 f29 f30 f46 f47
+- p2(v1):   3.3  0.12     0
+  neighbors: f25 f41 f47
+- p8(v9):   2.9 -0.26   0.1
+  neighbors: f28 f29 f30 f33 f34 f37 f39
+- p1(v6):   2.9  0.16  0.14
+  neighbors: f28 f30 f46 f50
+- p12(v3):   2.9 -0.23  0.24
+  neighbors: f28 f39 f50 f51
+- p10(v5):   3.3 -0.26   0.1
+  neighbors: f34 f37 f42 f43
+- p14(v8):   3.3 -0.23  0.24
+  neighbors: f37 f39 f43 f51
+- p18(v10):   3.3  0.16  0.14
+  neighbors: f41 f42 f43 f46 f47 f50 f51
+- f24
+    - flags: bottom simplicial tricoplanar seen keepcentrum
+    - owner of normal & centrum is facet f24
+    - normal:         0        0       -1
+    - offset:         -0
+    - center: 3.100340485572815 -0.07250549271702766      0 
+    - vertices: p6(v7) p4(v2) p0(v0)
+    - neighboring facets: f29 f25 f33
+- f25
+    - flags: top simplicial tricoplanar seen
+    - owner of normal & centrum is facet f24
+    - normal:         0        0       -1
+    - offset:         -0
+    - center: 3.100340485572815 -0.07250549271702766      0 
+    - vertices: p6(v7) p2(v1) p0(v0)
+    - neighboring facets: f47 f24 f41
+- f28
+    - flags: top simplicial tricoplanar seen keepcentrum
+    - owner of normal & centrum is facet f28
+    - normal:        -1        0       -0
+    - offset:    2.90534
+    - center: 2.905339956283569 -0.09595179408788682 0.09624779969453812 
+    - vertices: p8(v9) p1(v6) p12(v3)
+    - neighboring facets: f50 f39 f30
+- f29
+    - flags: top simplicial tricoplanar
+    - owner of normal & centrum is facet f28
+    - normal:        -1        0       -0
+    - offset:    2.90534
+    - center: 2.905339956283569 -0.09595179408788682 0.09624779969453812 
+    - vertices: p8(v9) p4(v2) p0(v0)
+    - neighboring facets: f24 f30 f33
+- f30
+    - flags: bottom simplicial tricoplanar seen
+    - owner of normal & centrum is facet f28
+    - normal:        -1        0       -0
+    - offset:    2.90534
+    - center: 2.905339956283569 -0.09595179408788682 0.09624779969453812 
+    - vertices: p8(v9) p1(v6) p0(v0)
+    - neighboring facets: f46 f29 f28
+- f33
+    - flags: top simplicial tricoplanar keepcentrum
+    - owner of normal & centrum is facet f33
+    - normal:        -0       -1        0
+    - offset:  -0.263759
+    - center: 3.100340485572815 -0.2637589871883392 0.05124599859118462 
+    - vertices: p8(v9) p6(v7) p4(v2)
+    - neighboring facets: f24 f29 f34
+- f34
+    - flags: bottom simplicial tricoplanar seen
+    - owner of normal & centrum is facet f33
+    - normal:        -0       -1        0
+    - offset:  -0.263759
+    - center: 3.100340485572815 -0.2637589871883392 0.05124599859118462 
+    - vertices: p8(v9) p6(v7) p10(v5)
+    - neighboring facets: f42 f37 f33
+- f37
+    - flags: top simplicial tricoplanar seen keepcentrum
+    - owner of normal & centrum is facet f37
+    - normal:         0  -0.9659   0.2588
+    - offset: -0.2812984
+    - center: 3.100340485572815 -0.2452534958720207 0.1715559996664524 
+    - vertices: p8(v9) p14(v8) p10(v5)
+    - neighboring facets: f43 f34 f39
+- f39
+    - flags: bottom simplicial tricoplanar seen
+    - owner of normal & centrum is facet f37
+    - normal:         0  -0.9659   0.2588
+    - offset: -0.2812984
+    - center: 3.100340485572815 -0.2452534958720207 0.1715559996664524 
+    - vertices: p8(v9) p14(v8) p12(v3)
+    - neighboring facets: f51 f28 f37
+- f41
+    - flags: bottom simplicial tricoplanar keepcentrum
+    - owner of normal & centrum is facet f41
+    - normal:         1        0        0
+    - offset:  -3.295341
+    - center: 3.295341014862061 -0.09595179408788682 0.09624779969453812 
+    - vertices: p18(v10) p6(v7) p2(v1)
+    - neighboring facets: f25 f47 f42
+- f42
+    - flags: top simplicial tricoplanar
+    - owner of normal & centrum is facet f41
+    - normal:         1        0        0
+    - offset:  -3.295341
+    - center: 3.295341014862061 -0.09595179408788682 0.09624779969453812 
+    - vertices: p18(v10) p6(v7) p10(v5)
+    - neighboring facets: f34 f43 f41
+- f43
+    - flags: bottom simplicial tricoplanar
+    - owner of normal & centrum is facet f41
+    - normal:         1        0        0
+    - offset:  -3.295341
+    - center: 3.295341014862061 -0.09595179408788682 0.09624779969453812 
+    - vertices: p18(v10) p14(v8) p10(v5)
+    - neighboring facets: f37 f42 f51
+- f46
+    - flags: top simplicial tricoplanar keepcentrum
+    - owner of normal & centrum is facet f46
+    - normal:        -0   0.9659  -0.2588
+    - offset: -0.1147018
+    - center: 3.100340485572815 0.1372535042464733 0.06906349956989288 
+    - vertices: p18(v10) p1(v6) p0(v0)
+    - neighboring facets: f30 f47 f50
+- f47
+    - flags: bottom simplicial tricoplanar
+    - owner of normal & centrum is facet f46
+    - normal:        -0   0.9659  -0.2588
+    - offset: -0.1147018
+    - center: 3.100340485572815 0.1372535042464733 0.06906349956989288 
+    - vertices: p18(v10) p2(v1) p0(v0)
+    - neighboring facets: f25 f46 f41
+- f50
+    - flags: bottom simplicial tricoplanar keepcentrum
+    - owner of normal & centrum is facet f50
+    - normal:         0   0.2588   0.9659
+    - offset:  -0.173734
+    - center: 3.100340485572815 -0.03549449890851974 0.1893735006451607 
+    - vertices: p18(v10) p1(v6) p12(v3)
+    - neighboring facets: f28 f51 f46
+- f51
+    - flags: top simplicial tricoplanar
+    - owner of normal & centrum is facet f50
+    - normal:         0   0.2588   0.9659
+    - offset:  -0.173734
+    - center: 3.100340485572815 -0.03549449890851974 0.1893735006451607 
+    - vertices: p18(v10) p14(v8) p12(v3)
+    - neighboring facets: f39 f50 f43

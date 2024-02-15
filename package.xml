@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>mc_env_description</name>
+  <version>1.0.7</version>
+  <description>mc_env_description</description>
+  <maintainer email="pierre.gergondet@gmail.com">Pierre Gergondet</maintainer>
+  <license>BSD</license>
+  <url>https://gite.lirmm.fr/multi-contact/mc_rtc_ros_data</url>
+  <author>Joris Vaillant</author>
+
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+
+  <export>
+    <build_type condition="$ROS_VERSION == 1">catkin</build_type>
+    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+  </export>
+</package>
+
+

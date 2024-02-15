@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<robot name="beam">
+  <link name="base_link" />
+
+    <link name="foot2">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/beam/foot2.stl" />
+      </geometry>
+      <material name="Foot">
+        <color rgba="0.08352795988321304 0.07589144259691238 0.07153297960758209 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="foot2" type="fixed">
+    <parent link="base_link" />
+    <child link="foot2" />
+    <origin rpy="0.0 0.0 0.0" xyz="2.299999952316284 0.0 0.02500000037252903" />
+  </joint>
+
+  <link name="foot1">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/beam/foot1.stl" />
+      </geometry>
+      <material name="Foot">
+        <color rgba="0.08352795988321304 0.07589144259691238 0.07153297960758209 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="foot1" type="fixed">
+    <parent link="base_link" />
+    <child link="foot1" />
+    <origin rpy="0.0 0.0 0.0" xyz="-2.299999952316284 0.0 0.02500000037252903" />
+  </joint>
+
+  <link name="beam">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/beam/beam.stl" />
+      </geometry>
+      <material name="Beam">
+        <color rgba="0.3084837794303894 0.3185311257839203 0.2064049392938614 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="beam" type="fixed">
+    <parent link="base_link" />
+    <child link="beam" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.4000000059604645" />
+  </joint>
+
+</robot>

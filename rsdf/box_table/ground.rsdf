@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="box_table">
+  
+  <planar_surface name="AllGround" link="ground">
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 2.7939677238464355e-09" />
+    <points>
+      <point xy="50.0 -1.0" />
+        <point xy="50.0 1.0" />
+        <point xy="-50.0 1.0" />
+        <point xy="-50.0 -1.0" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

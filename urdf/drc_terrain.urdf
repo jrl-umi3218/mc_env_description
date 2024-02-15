@@ -1,0 +1,1161 @@
+<?xml version="1.0" ?>
+<robot name="drc_terrain">
+  <link name="base_link" />
+
+    <link name="ground">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/ground.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="ground" type="fixed">
+    <parent link="base_link" />
+    <child link="ground" />
+    <origin rpy="0.0 0.0 0.0" xyz="2.0 0.0 0.0" />
+  </joint>
+
+  <link name="wall">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/wall.stl" />
+      </geometry>
+      <material name="Shape.067">
+        <color rgba="0.8705882430076599 0.7215686440467834 0.529411792755127 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="wall" type="fixed">
+    <parent link="base_link" />
+    <child link="wall" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.27956652641296387 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.66">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.66.stl" />
+      </geometry>
+      <material name="Shape.066">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.66" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.66" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.65">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.65.stl" />
+      </geometry>
+      <material name="Shape.065">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.65" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.65" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.64">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.64.stl" />
+      </geometry>
+      <material name="Shape.064">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.64" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.64" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.63">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.63.stl" />
+      </geometry>
+      <material name="Shape.063">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.63" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.63" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.62">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.62.stl" />
+      </geometry>
+      <material name="Shape.062">
+        <color rgba="0.8705882430076599 0.7215686440467834 0.529411792755127 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.62" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.62" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.61">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.61.stl" />
+      </geometry>
+      <material name="Shape.061">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.61" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.61" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.60">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.60.stl" />
+      </geometry>
+      <material name="Shape.060">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.60" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.60" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.59">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.59.stl" />
+      </geometry>
+      <material name="Shape.059">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.59" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.59" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="brickA5">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/brickA5.stl" />
+      </geometry>
+      <material name="Shape.058">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="brickA5" type="fixed">
+    <parent link="base_link" />
+    <child link="brickA5" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="brickB6">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/brickB6.stl" />
+      </geometry>
+      <material name="Shape.057">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="brickB6" type="fixed">
+    <parent link="base_link" />
+    <child link="brickB6" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.56">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.56.stl" />
+      </geometry>
+      <material name="Shape.056">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.56" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.56" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.55">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.55.stl" />
+      </geometry>
+      <material name="Shape.055">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.55" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.55" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.54">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.54.stl" />
+      </geometry>
+      <material name="Shape.054">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.54" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.54" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.53">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.53.stl" />
+      </geometry>
+      <material name="Shape.053">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.53" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.53" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.52">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.52.stl" />
+      </geometry>
+      <material name="Shape.052">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.52" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.52" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.51">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.51.stl" />
+      </geometry>
+      <material name="Shape.051">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.51" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.51" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.50">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.50.stl" />
+      </geometry>
+      <material name="Shape.050">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.50" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.50" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.49">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.49.stl" />
+      </geometry>
+      <material name="Shape.049">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.49" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.49" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.48">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.48.stl" />
+      </geometry>
+      <material name="Shape.048">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.48" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.48" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.47">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.47.stl" />
+      </geometry>
+      <material name="Shape.047">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.47" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.47" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.46">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.46.stl" />
+      </geometry>
+      <material name="Shape.046">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.46" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.46" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.45">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.45.stl" />
+      </geometry>
+      <material name="Shape.045">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.45" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.45" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.44">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.44.stl" />
+      </geometry>
+      <material name="Shape.044">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.44" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.44" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.43">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.43.stl" />
+      </geometry>
+      <material name="Shape.043">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.43" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.43" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.42">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.42.stl" />
+      </geometry>
+      <material name="Shape.042">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.42" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.42" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.41">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.41.stl" />
+      </geometry>
+      <material name="Shape.041">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.41" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.41" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.40">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.40.stl" />
+      </geometry>
+      <material name="Shape.040">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.40" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.40" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="brickC5">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/brickC5.stl" />
+      </geometry>
+      <material name="Shape.039">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="brickC5" type="fixed">
+    <parent link="base_link" />
+    <child link="brickC5" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.38">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.38.stl" />
+      </geometry>
+      <material name="Shape.038">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.38" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.38" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.37">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.37.stl" />
+      </geometry>
+      <material name="Shape.037">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.37" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.37" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.36">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.36.stl" />
+      </geometry>
+      <material name="Shape.036">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.36" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.36" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.35">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.35.stl" />
+      </geometry>
+      <material name="Shape.035">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.35" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.35" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.34">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.34.stl" />
+      </geometry>
+      <material name="Shape.034">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.34" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.34" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.33">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.33.stl" />
+      </geometry>
+      <material name="Shape.033">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.33" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.33" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.32">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.32.stl" />
+      </geometry>
+      <material name="Shape.032">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.32" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.32" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.31">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.31.stl" />
+      </geometry>
+      <material name="Shape.031">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.31" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.31" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.30">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.30.stl" />
+      </geometry>
+      <material name="Shape.030">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.30" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.30" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.29">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.29.stl" />
+      </geometry>
+      <material name="Shape.029">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.29" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.29" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.28">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.28.stl" />
+      </geometry>
+      <material name="Shape.028">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.28" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.28" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="brickA6">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/brickA6.stl" />
+      </geometry>
+      <material name="Shape.027">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="brickA6" type="fixed">
+    <parent link="base_link" />
+    <child link="brickA6" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.26">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.26.stl" />
+      </geometry>
+      <material name="Shape.026">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.26" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.26" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.25">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.25.stl" />
+      </geometry>
+      <material name="Shape.025">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.25" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.25" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.24">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.24.stl" />
+      </geometry>
+      <material name="Shape.024">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.24" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.24" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.23">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.23.stl" />
+      </geometry>
+      <material name="Shape.023">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.23" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.23" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.22">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.22.stl" />
+      </geometry>
+      <material name="Shape.022">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.22" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.22" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.21">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.21.stl" />
+      </geometry>
+      <material name="Shape.021">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.21" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.21" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.20">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.20.stl" />
+      </geometry>
+      <material name="Shape.020">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.20" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.20" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.19">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.19.stl" />
+      </geometry>
+      <material name="Shape.019">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.19" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.19" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.18">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.18.stl" />
+      </geometry>
+      <material name="Shape.018">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.18" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.18" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.17">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.17.stl" />
+      </geometry>
+      <material name="Shape.017">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.17" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.17" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.16">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.16.stl" />
+      </geometry>
+      <material name="Shape.016">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.16" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.16" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.15">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.15.stl" />
+      </geometry>
+      <material name="Shape.015">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.15" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.15" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.14">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.14.stl" />
+      </geometry>
+      <material name="Shape.014">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.14" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.14" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.13">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.13.stl" />
+      </geometry>
+      <material name="Shape.013">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.13" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.13" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="brickB5">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/brickB5.stl" />
+      </geometry>
+      <material name="Shape.012">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="brickB5" type="fixed">
+    <parent link="base_link" />
+    <child link="brickB5" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="brickC6">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/brickC6.stl" />
+      </geometry>
+      <material name="Shape.011">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="brickC6" type="fixed">
+    <parent link="base_link" />
+    <child link="brickC6" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.10">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.10.stl" />
+      </geometry>
+      <material name="Shape.010">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.10" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.10" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.09">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.09.stl" />
+      </geometry>
+      <material name="Shape.009">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.09" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.09" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.08">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.08.stl" />
+      </geometry>
+      <material name="Shape.008">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.08" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.08" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.07">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.07.stl" />
+      </geometry>
+      <material name="Shape.007">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.07" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.07" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.06">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.06.stl" />
+      </geometry>
+      <material name="Shape.006">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.06" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.06" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.05">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.05.stl" />
+      </geometry>
+      <material name="Shape.005">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.05" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.05" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.04">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.04.stl" />
+      </geometry>
+      <material name="Shape.004">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.04" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.04" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.03">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.03.stl" />
+      </geometry>
+      <material name="Shape.003">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.03" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.03" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.02">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.02.stl" />
+      </geometry>
+      <material name="Shape.002">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.02" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.02" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="zShapeIndexedFaceSet.01">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/drc_terrain/zShapeIndexedFaceSet.01.stl" />
+      </geometry>
+      <material name="Shape.001">
+        <color rgba="0.4000000059604645 0.4000000059604645 0.4000000059604645 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="zShapeIndexedFaceSet.01" type="fixed">
+    <parent link="base_link" />
+    <child link="zShapeIndexedFaceSet.01" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+</robot>

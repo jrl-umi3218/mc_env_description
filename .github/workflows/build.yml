@@ -1,0 +1,34 @@
+name: CI of mc_env_description
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, ubuntu-20.04]
+        variant: [ROS, Standalone]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v3
+      if: ${{ matrix.variant == 'Standalone' }}
+      with:
+        submodules: recursive
+    - name: Build standalone
+      if: ${{ matrix.variant == 'Standalone' }}
+      uses: jrl-umi3218/github-actions/build-cmake-project@master
+      with:
+        options: -DDISABLE_ROS=ON
+    - name: Build with catkin
+      if: ${{ matrix.os == 'ubuntu-20.04' && matrix.variant == 'ROS' }}
+      uses: jrl-umi3218/github-actions/build-catkin-project@master
+    - name: Build with colcon
+      if: ${{ matrix.os == 'ubuntu-22.04' && matrix.variant == 'ROS' }}
+      uses: jrl-umi3218/github-actions/build-colcon-project@master

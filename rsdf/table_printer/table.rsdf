@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="table_printer">
+  
+  <planar_surface name="Table" link="table">
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.039999961853027344" />
+    <points>
+      <point xy="-0.5 -1.0" />
+        <point xy="0.5 -1.0" />
+        <point xy="0.5 1.0" />
+        <point xy="-0.5 1.0" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

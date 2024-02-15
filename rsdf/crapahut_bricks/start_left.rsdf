@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="crapahut_bricks">
+  
+  <planar_surface name="StartLeft" link="start_left">
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.07500000298023224" />
+    <points>
+      <point xy="-0.19499999284744263 -0.0949999988079071" />
+        <point xy="0.19499999284744263 -0.0949999988079071" />
+        <point xy="0.19499999284744263 0.0949999988079071" />
+        <point xy="-0.19499999284744263 0.0949999988079071" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="crapahut_bricks">
+  
+  <planar_surface name="TopBlock" link="pillar_6">
+    <origin rpy="7.8657893525934e-16 -1.7881394143159923e-08 -8.797736228416397e-08" xyz="0.0 0.0 0.07499998807907104" />
+    <points>
+      <point xy="-0.19499999284744263 -0.0949999988079071" />
+        <point xy="0.19499999284744263 -0.0949999988079071" />
+        <point xy="0.19499999284744263 0.0949999988079071" />
+        <point xy="-0.19499999284744263 0.0949999988079071" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

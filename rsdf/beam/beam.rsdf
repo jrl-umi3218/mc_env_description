@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="beam">
+  
+  <planar_surface name="Beam" link="beam">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.05000000074505806" />
+    <points>
+      <point xy="-2.5 -0.07000000029802322" />
+        <point xy="2.5 -0.07000000029802322" />
+        <point xy="2.5 0.07000000029802322" />
+        <point xy="-2.5 0.07000000029802322" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="drc_terrain">
+  
+  <planar_surface name="BrickB6" link="brickB6">
+    <origin rpy="0.0 -0.2617993950843811 0.0" xyz="1.0568349361419678 -0.8640000820159912 0.18937350809574127" />
+    <points>
+      <point xy="-0.1979997307062149 -0.19499993324279785" />
+        <point xy="0.19799984991550446 -0.19499993324279785" />
+        <point xy="0.19799984991550446 0.1950000524520874" />
+        <point xy="-0.1979997307062149 0.1950000524520874" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

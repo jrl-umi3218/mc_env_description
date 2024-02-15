@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<robot name="table">
+  <link name="base_link" />
+
+    <link name="ground">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table/ground.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="ground" type="fixed">
+    <parent link="base_link" />
+    <child link="ground" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.03803446888923645" />
+  </joint>
+
+  <link name="table">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table/table.stl" />
+      </geometry>
+      <material name="Shape.003">
+        <color rgba="0.6200000047683716 0.6700000166893005 0.10999999940395355 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="table" type="fixed">
+    <parent link="base_link" />
+    <child link="table" />
+    <origin rpy="-1.1920923270736239e-07 1.30336559323041e-06 12.566370964050293" xyz="5.618053696620642e-36 0.0 0.0" />
+  </joint>
+
+</robot>

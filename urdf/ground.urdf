@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<robot name="ground">
+  <link name="base_link" />
+
+    <link name="ground">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/ground/ground.stl" />
+      </geometry>
+      <material name="XXX">
+        <color rgba="0.5394796133041382 0.7230552434921265 0.7454043626785278 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="ground" type="fixed">
+    <parent link="base_link" />
+    <child link="ground" />
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+</robot>

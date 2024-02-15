@@ -1,0 +1,135 @@
+3
+8 12 18
+    -2      2 0.03803399950265884 
+    -2      2 -0.03803399950265884 
+    -2     -2 -0.03803399950265884 
+     2      2 0.03803399950265884 
+     2      2 -0.03803399950265884 
+     2     -2 0.03803399950265884 
+     2     -2 -0.03803399950265884 
+    -2     -2 0.03803399950265884 
+3 1 7 2 
+3 7 1 0 
+3 5 7 3 
+3 3 7 0 
+3 4 3 0 
+3 1 4 0 
+3 6 7 5 
+3 7 6 2 
+3 6 1 2 
+3 6 4 1 
+3 6 5 3 
+3 4 6 3 
+Vertices and facets:
+- p7(v6):    -2    -2 0.038
+  neighbors: f18 f19 f22 f24 f30 f31
+- p1(v3):    -2     2 -0.038
+  neighbors: f18 f19 f27 f34 f35
+- p2(v2):    -2    -2 -0.038
+  neighbors: f18 f31 f34
+- p0(v0):    -2     2 0.038
+  neighbors: f19 f24 f26 f27
+- p5(v5):     2    -2 0.038
+  neighbors: f22 f30 f38
+- p3(v1):     2     2 0.038
+  neighbors: f22 f24 f26 f38 f39
+- p4(v7):     2     2 -0.038
+  neighbors: f26 f27 f35 f39
+- p6(v8):     2    -2 -0.038
+  neighbors: f30 f31 f34 f35 f38 f39
+- f18
+    - flags: bottom simplicial tricoplanar seen keepcentrum
+    - owner of normal & centrum is facet f18
+    - normal:        -1       -0        0
+    - offset:         -2
+    - center:     -2      0      0 
+    - vertices: p7(v6) p1(v3) p2(v2)
+    - neighboring facets: f34 f31 f19
+- f19
+    - flags: top simplicial tricoplanar seen
+    - owner of normal & centrum is facet f18
+    - normal:        -1       -0        0
+    - offset:         -2
+    - center:     -2      0      0 
+    - vertices: p7(v6) p1(v3) p0(v0)
+    - neighboring facets: f27 f24 f18
+- f22
+    - flags: bottom simplicial tricoplanar seen keepcentrum
+    - owner of normal & centrum is facet f22
+    - normal:        -0       -0        1
+    - offset:  -0.038034
+    - center:      0      0 0.03803399950265884 
+    - vertices: p7(v6) p5(v5) p3(v1)
+    - neighboring facets: f38 f24 f30
+- f24
+    - flags: bottom simplicial tricoplanar seen
+    - owner of normal & centrum is facet f22
+    - normal:        -0       -0        1
+    - offset:  -0.038034
+    - center:      0      0 0.03803399950265884 
+    - vertices: p7(v6) p3(v1) p0(v0)
+    - neighboring facets: f26 f19 f22
+- f26
+    - flags: top simplicial tricoplanar keepcentrum
+    - owner of normal & centrum is facet f26
+    - normal:         0        1        0
+    - offset:         -2
+    - center:      0      2      0 
+    - vertices: p4(v7) p3(v1) p0(v0)
+    - neighboring facets: f24 f27 f39
+- f27
+    - flags: bottom simplicial tricoplanar
+    - owner of normal & centrum is facet f26
+    - normal:         0        1        0
+    - offset:         -2
+    - center:      0      2      0 
+    - vertices: p4(v7) p1(v3) p0(v0)
+    - neighboring facets: f19 f26 f35
+- f30
+    - flags: top simplicial tricoplanar keepcentrum
+    - owner of normal & centrum is facet f30
+    - normal:         0       -1        0
+    - offset:         -2
+    - center:      0     -2      0 
+    - vertices: p6(v8) p7(v6) p5(v5)
+    - neighboring facets: f22 f38 f31
+- f31
+    - flags: bottom simplicial tricoplanar
+    - owner of normal & centrum is facet f30
+    - normal:         0       -1        0
+    - offset:         -2
+    - center:      0     -2      0 
+    - vertices: p6(v8) p7(v6) p2(v2)
+    - neighboring facets: f18 f34 f30
+- f34
+    - flags: top simplicial tricoplanar keepcentrum
+    - owner of normal & centrum is facet f34
+    - normal:        -0        0       -1
+    - offset:  -0.038034
+    - center:      0      0 -0.03803399950265884 
+    - vertices: p6(v8) p1(v3) p2(v2)
+    - neighboring facets: f18 f31 f35
+- f35
+    - flags: top simplicial tricoplanar
+    - owner of normal & centrum is facet f34
+    - normal:        -0        0       -1
+    - offset:  -0.038034
+    - center:      0      0 -0.03803399950265884 
+    - vertices: p6(v8) p4(v7) p1(v3)
+    - neighboring facets: f27 f34 f39
+- f38
+    - flags: top simplicial tricoplanar keepcentrum
+    - owner of normal & centrum is facet f38
+    - normal:         1        0       -0
+    - offset:         -2
+    - center:      2      0      0 
+    - vertices: p6(v8) p5(v5) p3(v1)
+    - neighboring facets: f22 f39 f30
+- f39
+    - flags: bottom simplicial tricoplanar
+    - owner of normal & centrum is facet f38
+    - normal:         1        0       -0
+    - offset:         -2
+    - center:      2      0      0 
+    - vertices: p6(v8) p4(v7) p3(v1)
+    - neighboring facets: f26 f38 f35

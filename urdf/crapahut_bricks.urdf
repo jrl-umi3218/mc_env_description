@@ -1,0 +1,258 @@
+<?xml version="1.0" ?>
+<robot name="crapahut_bricks">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.1" radius="0.1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+  </link>
+
+    <link name="pillar_1">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/pillar_1.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="pillar_1" type="fixed">
+    <parent link="base_link" />
+    <child link="pillar_1" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.23835942149162292 -0.3690038323402405 0.07500000298023224" />
+  </joint>
+
+  <link name="pillar_3">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/pillar_3.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="pillar_3" type="fixed">
+    <parent link="base_link" />
+    <child link="pillar_3" />
+    <origin rpy="7.8657893525934e-16 -1.7881394143159923e-08 -8.797736228416397e-08" xyz="0.2383594512939453 -0.36900386214256287 0.375" />
+  </joint>
+
+  <link name="pillar_4">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/pillar_4.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="pillar_4" type="fixed">
+    <parent link="base_link" />
+    <child link="pillar_4" />
+    <origin rpy="7.8657893525934e-16 -1.7881394143159923e-08 -8.797736228416397e-08" xyz="0.2383594512939453 -0.36900386214256287 0.5249999761581421" />
+  </joint>
+
+  <link name="pillar_5">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/pillar_5.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="pillar_5" type="fixed">
+    <parent link="base_link" />
+    <child link="pillar_5" />
+    <origin rpy="7.8657893525934e-16 -1.7881394143159923e-08 -8.797736228416397e-08" xyz="0.2383594512939453 -0.36900386214256287 0.675000011920929" />
+  </joint>
+
+  <link name="pillar_6">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/pillar_6.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="pillar_6" type="fixed">
+    <parent link="base_link" />
+    <child link="pillar_6" />
+    <origin rpy="7.8657893525934e-16 -1.7881394143159923e-08 -8.797736228416397e-08" xyz="0.2383594512939453 -0.36900386214256287 0.824999988079071" />
+  </joint>
+
+  <link name="pillar_2">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/pillar_2.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="pillar_2" type="fixed">
+    <parent link="base_link" />
+    <child link="pillar_2" />
+    <origin rpy="7.8657893525934e-16 -1.7881394143159923e-08 -8.797736228416397e-08" xyz="0.2383594512939453 -0.36900386214256287 0.22499999403953552" />
+  </joint>
+
+  <link name="slant_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/slant_right.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="slant_right" type="fixed">
+    <parent link="base_link" />
+    <child link="slant_right" />
+    <origin rpy="0.0 -0.2617993950843811 0.0" xyz="0.4000000059604645 -0.0949999988079071 0.12291000038385391" />
+  </joint>
+
+  <link name="slant_left">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/slant_left.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="slant_left" type="fixed">
+    <parent link="base_link" />
+    <child link="slant_left" />
+    <origin rpy="0.0 -0.2617993950843811 0.0" xyz="0.4000000059604645 0.0949999988079071 0.12291000038385391" />
+  </joint>
+
+  <link name="support">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/support.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="support" type="fixed">
+    <parent link="base_link" />
+    <child link="support" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.5479999780654907 0.0 0.05000000074505806" />
+  </joint>
+
+  <link name="start_left">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/start_left.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="start_left" type="fixed">
+    <parent link="base_link" />
+    <child link="start_left" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.0949999988079071 0.07500000298023224" />
+  </joint>
+
+  <link name="start_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut_bricks/start_right.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </inertial>
+
+  </link>
+  <joint name="start_right" type="fixed">
+    <parent link="base_link" />
+    <child link="start_right" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0949999988079071 0.07500000298023224" />
+  </joint>
+
+</robot>

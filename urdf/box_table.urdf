@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<robot name="box_table">
+  <link name="base_link" />
+
+    <link name="ground">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/box_table/ground.stl" />
+      </geometry>
+      <material name="Ground">
+        <color rgba="0.5367116332054138 0.7197052240371704 0.7483876347541809 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="ground" type="fixed">
+    <parent link="base_link" />
+    <child link="ground" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.012499997392296791" />
+  </joint>
+
+  <link name="box_table">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/box_table/box_table.stl" />
+      </geometry>
+      <material name="Ground.001">
+        <color rgba="0.4169919788837433 0.5591667890548706 0.5814512372016907 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="box_table" type="fixed">
+    <parent link="base_link" />
+    <child link="box_table" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.48774999380111694" />
+  </joint>
+
+</robot>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<robot name="crapahut">
+  <planar_surface name="Goal" link="crapahut_goal">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.20181848108768463" />
+    <points>
+      <point xy="-0.25 -0.375" />
+        <point xy="0.25 -0.375" />
+        <point xy="0.25 0.375" />
+        <point xy="-0.25 0.375" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<robot name="chair">
+
+	<link name="base_link" />
+	<joint name="base" type="fixed">
+		<parent link="base_link" />
+		<child link="chair" />
+	</joint>
+
+	<link name="chair">
+		<visual>
+			<geometry>
+				<mesh filename="package://mc_env_description/meshes/chair/chair.dae"/>
+			</geometry>
+		</visual>
+	</link>
+
+	<!-- virtual links for convex shapes of chair parts -->
+	<link name="back_support" />
+	<joint name="back_joint" type="fixed">
+		<parent link="chair" />
+		<child link="back_support" />
+	</joint>
+
+	<link name="left_handle" />
+	<joint name="lhandle_joint" type="fixed">
+		<parent link="chair" />
+		<child link="left_handle" />
+	</joint>
+
+	<link name="right_handle" />
+	<joint name="rhandle_joint" type="fixed">
+		<parent link="chair" />
+		<child link="right_handle" />
+	</joint>
+
+	<link name="leg_fl" />
+	<joint name="leg_fl_joint" type="fixed">
+		<parent link="chair" />
+		<child link="leg_fl" />
+	</joint>
+
+	<link name="leg_fr" />
+	<joint name="leg_fr_joint" type="fixed">
+		<parent link="chair" />
+		<child link="leg_fr" />
+	</joint>
+
+	<link name="leg_rl" />
+	<joint name="leg_rl_joint" type="fixed">
+		<parent link="chair" />
+		<child link="leg_rl" />
+	</joint>
+
+	<link name="leg_rr" />
+	<joint name="leg_rr_joint" type="fixed">
+		<parent link="chair" />
+		<child link="leg_rr" />
+	</joint>
+
+</robot>

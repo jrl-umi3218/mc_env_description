@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<robot name="crapahut">
+  <link name="base_link" />
+
+    <link name="crapahut_start">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut/crapahut_start.stl" />
+      </geometry>
+      <material name="Material.001">
+        <color rgba="0.29600000381469727 0.41200000047683716 0.42899999022483826 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="crapahut_start" type="fixed">
+    <parent link="base_link" />
+    <child link="crapahut_start" />
+    <origin rpy="0.0 0.0 0.0" xyz="-0.625 0.0 -0.02500000037252903" />
+  </joint>
+
+  <link name="crapahut_goal">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut/crapahut_goal.stl" />
+      </geometry>
+      <material name="Material.001">
+        <color rgba="0.29600000381469727 0.41200000047683716 0.42899999022483826 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="crapahut_goal" type="fixed">
+    <parent link="base_link" />
+    <child link="crapahut_goal" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.6000000238418579 0.0 0.25" />
+  </joint>
+
+  <link name="crapahut_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut/crapahut_right.stl" />
+      </geometry>
+      <material name="Material">
+        <color rgba="0.3555205762386322 0.4744111895561218 0.6266514658927917 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="crapahut_right" type="fixed">
+    <parent link="base_link" />
+    <child link="crapahut_right" />
+    <origin rpy="0.0 0.0 0.0" xyz="-0.009999999776482582 -0.3677527606487274 0.32499998807907104" />
+  </joint>
+
+  <link name="crapahut_left">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut/crapahut_left.stl" />
+      </geometry>
+      <material name="Material">
+        <color rgba="0.3555205762386322 0.4744111895561218 0.6266514658927917 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="crapahut_left" type="fixed">
+    <parent link="base_link" />
+    <child link="crapahut_left" />
+    <origin rpy="0.0 0.0 0.0" xyz="-0.009999999776482582 0.3678433895111084 0.25" />
+  </joint>
+
+  <link name="crapahut_ramp">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/crapahut/crapahut_ramp.stl" />
+      </geometry>
+      <material name="Material.001">
+        <color rgba="0.29600000381469727 0.41200000047683716 0.42899999022483826 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="crapahut_ramp" type="fixed">
+    <parent link="base_link" />
+    <child link="crapahut_ramp" />
+    <origin rpy="0.0 -0.2619999945163727 0.0" xyz="-0.011714735068380833 0.0 0.043684929609298706" />
+  </joint>
+
+</robot>

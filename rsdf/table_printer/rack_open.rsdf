@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="table_printer">
+  
+  <planar_surface name="RackHandleOpen" link="rack_open">
+    <origin rpy="0.0 -1.570796251296997 0.0" xyz="0.14500004053115845 3.645605062274626e-08 -0.029999971389770508" />
+    <points>
+      <point xy="0.009999999776482582 -0.03999999910593033" />
+        <point xy="0.009999999776482582 0.04000000283122063" />
+        <point xy="-0.009999999776482582 0.03999998793005943" />
+        <point xy="-0.009999999776482582 -0.03999999538064003" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

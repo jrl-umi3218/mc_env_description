@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="drc_terrain">
+  
+  <planar_surface name="Ground" link="ground">
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+    <points>
+      <point xy="-3.0 -3.0" />
+        <point xy="3.0 -3.0" />
+        <point xy="3.0 3.0" />
+        <point xy="-3.0 3.0" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<robot name="corniche">
+  <link name="base_link" />
+
+    <link name="support_wall">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/corniche/support_wall.stl" />
+      </geometry>
+      <material name="Grey">
+        <color rgba="0.2 0.2 0.2 1.0" />
+      </material>
+    </visual>
+  </link>
+  <joint name="support_wall" type="fixed">
+    <parent link="base_link" />
+    <child link="support_wall" />
+    <origin rpy="0.0 -0.5235990285873413 0.0" xyz="-0.9699658751487732 0.7098259329795837 0.781538724899292" />
+  </joint>
+
+  <link name="end">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/corniche/end.stl" />
+      </geometry>
+      <material name="Grey">
+        <color rgba="0.2 0.2 0.2 1.0" />
+      </material>
+    </visual>
+  </link>
+  <joint name="end" type="fixed">
+    <parent link="base_link" />
+    <child link="end" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.05499999225139618 1.7569060325622559 0.09000000357627869" />
+  </joint>
+
+  <link name="corniche">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/corniche/corniche.stl" />
+      </geometry>
+      <material name="Grey">
+        <color rgba="0.2 0.2 0.2 1.0" />
+      </material>
+    </visual>
+  </link>
+  <joint name="corniche" type="fixed">
+    <parent link="base_link" />
+    <child link="corniche" />
+    <origin rpy="0.0 0.0 0.0" xyz="-0.27000001072883606 0.6200000047683716 0.09000000357627869" />
+  </joint>
+
+  <link name="start">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/corniche/start.stl" />
+      </geometry>
+      <material name="Grey">
+        <color rgba="0.2 0.2 0.2 1.0" />
+      </material>
+    </visual>
+  </link>
+  <joint name="start" type="fixed">
+    <parent link="base_link" />
+    <child link="start" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.05499999225139618 -0.19663992524147034 0.09000000357627869" />
+  </joint>
+
+  <link name="obstacle_wall_base">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/corniche/obstacle_wall_base.stl" />
+      </geometry>
+      <material name="Grey">
+        <color rgba="0.2 0.2 0.2 1.0" />
+      </material>
+    </visual>
+  </link>
+  <joint name="obstacle_wall_base" type="fixed">
+    <parent link="base_link" />
+    <child link="obstacle_wall_base" />
+    <origin rpy="0.0 -0.08726649731397629 0.0" xyz="0.19909651577472687 0.48750001192092896 0.5571562051773071" />
+  </joint>
+
+</robot>

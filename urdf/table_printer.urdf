@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<robot name="table_printer">
+  <link name="base_link" />
+
+    <link name="rack_open">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table_printer/rack_open.stl" />
+      </geometry>
+      <material name="Material.004">
+        <color rgba="0.800000011920929 0.800000011920929 0.800000011920929 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="rack_open" type="fixed">
+    <parent link="base_link" />
+    <child link="rack_open" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.5149800181388855 0.0 0.8035644888877869" />
+  </joint>
+
+  <link name="table_foot4">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table_printer/table_foot4.stl" />
+      </geometry>
+      <material name="Material.003">
+        <color rgba="0.252942830324173 0.237147718667984 0.23033183813095093 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="table_foot4" type="fixed">
+    <parent link="base_link" />
+    <child link="table_foot4" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.30000001192092896 0.800000011920929 0.3400000035762787" />
+  </joint>
+
+  <link name="table_foot3">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table_printer/table_foot3.stl" />
+      </geometry>
+      <material name="Material.003">
+        <color rgba="0.252942830324173 0.237147718667984 0.23033183813095093 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="table_foot3" type="fixed">
+    <parent link="base_link" />
+    <child link="table_foot3" />
+    <origin rpy="0.0 0.0 0.0" xyz="-0.30000001192092896 0.800000011920929 0.3400000035762787" />
+  </joint>
+
+  <link name="table_foot2">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table_printer/table_foot2.stl" />
+      </geometry>
+      <material name="Material.003">
+        <color rgba="0.252942830324173 0.237147718667984 0.23033183813095093 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="table_foot2" type="fixed">
+    <parent link="base_link" />
+    <child link="table_foot2" />
+    <origin rpy="0.0 0.0 0.0" xyz="-0.30000001192092896 -0.800000011920929 0.3400000035762787" />
+  </joint>
+
+  <link name="table_foot1">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table_printer/table_foot1.stl" />
+      </geometry>
+      <material name="Material.003">
+        <color rgba="0.252942830324173 0.237147718667984 0.23033183813095093 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="table_foot1" type="fixed">
+    <parent link="base_link" />
+    <child link="table_foot1" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.30000001192092896 -0.800000011920929 0.3400000035762787" />
+  </joint>
+
+  <link name="ground">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table_printer/ground.stl" />
+      </geometry>
+      <material name="Material.001">
+        <color rgba="0.6512458324432373 0.8000000715255737 0.5952509045600891 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="ground" type="fixed">
+    <parent link="base_link" />
+    <child link="ground" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <link name="table">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table_printer/table.stl" />
+      </geometry>
+      <material name="Material.002">
+        <color rgba="0.2667607069015503 0.1705951988697052 0.12244077026844025 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="table" type="fixed">
+    <parent link="base_link" />
+    <child link="table" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.7200000286102295" />
+  </joint>
+
+  <link name="printer">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table_printer/printer.stl" />
+      </geometry>
+      <material name="default">
+        <color rgba="1.0 1.0 1.0 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="printer" type="fixed">
+    <parent link="base_link" />
+    <child link="printer" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.4067094922065735 0.023292304947972298 0.9592243432998657" />
+  </joint>
+
+  <link name="rack">
+    <visual>
+      <geometry>
+        <mesh filename="package://mc_env_description/meshes/table_printer/rack.stl" />
+      </geometry>
+      <material name="Material.004">
+        <color rgba="0.800000011920929 0.800000011920929 0.800000011920929 1" />
+      </material>
+    </visual>
+
+  </link>
+  <joint name="rack" type="fixed">
+    <parent link="base_link" />
+    <child link="rack" />
+    <origin rpy="0.0 0.0 0.0" xyz="0.3849766254425049 0.0 0.8035644888877869" />
+  </joint>
+
+</robot>

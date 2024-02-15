@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="box_table">
+  
+  <planar_surface name="Top" link="box_table">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.3632499873638153" />
+    <points>
+      <point xy="-0.17499999701976776 -0.2750000059604645" />
+        <point xy="0.17499999701976776 -0.2750000059604645" />
+        <point xy="0.17499999701976776 0.2750000059604645" />
+        <point xy="-0.17499999701976776 0.2750000059604645" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>

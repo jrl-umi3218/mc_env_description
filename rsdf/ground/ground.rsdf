@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="ground">
+  
+  <planar_surface name="AllGround" link="ground">
+    <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
+    <points>
+      <point xy="-10.0 10.0" />
+        <point xy="-10.0 -10.0" />
+        <point xy="10.0 -10.0" />
+        <point xy="10.0 10.0" />
+    </points>
+    <material name="plastic" />
+  </planar_surface>
+
+</robot>
